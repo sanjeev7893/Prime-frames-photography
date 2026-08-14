@@ -323,7 +323,52 @@ footer strong{
   .photo{
     height:380px;
   }
+}/* ===== PREMIUM PHOTO GALLERY ===== */
+
+.gallery .photo{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+    overflow:hidden;
+    color:transparent;
+    transition:transform .4s ease, box-shadow .4s ease;
 }
+
+.gallery .photo:hover{
+    transform:scale(1.03);
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
+}
+
+/* Wedding */
+.gallery .photo:nth-child(1){
+    background-image:url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85");
+}
+
+/* Pre-Wedding */
+.gallery .photo:nth-child(2){
+    background-image:url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85");
+}
+
+/* Cinematic */
+.gallery .photo:nth-child(3){
+    background-image:url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=85");
+}
+
+/* Haldi */
+.gallery .photo:nth-child(4){
+    background-image:url("https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1200&q=85");
+}
+
+/* Portrait */
+.gallery .photo:nth-child(5){
+    background-image:url("https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1200&q=85");
+}
+
+/* Events */
+.gallery .photo:nth-child(6){
+    background-image:url("https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?auto=format&fit=crop&w=1200&q=85");
+  }
 </style>
 </head>
 
