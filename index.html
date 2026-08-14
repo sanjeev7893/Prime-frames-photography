@@ -368,6 +368,100 @@ footer strong{
 /* Events */
 .gallery .photo:nth-child(6){
     background-image:url("https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?auto=format&fit=crop&w=1200&q=85");
+  }/* PACKAGES */
+
+#packages {
+  padding: 100px 7%;
+  background: #fffdf8;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 50px auto 0;
+}
+
+.package-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e8dfcf;
+  padding: 40px 28px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.package-card.featured {
+  border: 2px solid #b8862f;
+  transform: translateY(-12px);
+}
+
+.package-icon {
+  color: #b8862f;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.package-card h3 {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.price {
+  color: #b8862f;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.package-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.package-card li {
+  padding: 9px 0;
+  border-bottom: 1px solid #eee8dc;
+  font-size: 15px;
+}
+
+.package-btn {
+  display: inline-block;
+  padding: 13px 28px;
+  border: 1px solid #b8862f;
+  color: #b8862f;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.package-btn:hover {
+  background: #b8862f;
+  color: white;
+}
+
+.popular {
+  background: #b8862f;
+  color: white;
+  padding: 7px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin: -40px -28px 25px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .package-card.featured {
+    transform: none;
+  }
   }
 </style>
 </head>
@@ -479,7 +573,79 @@ footer strong{
   </div>
 
 </section>
+<!-- PACKAGES -->
+<section id="packages">
 
+  <div class="title">
+    <span>OUR PACKAGES</span>
+    <h2>Choose Your Package</h2>
+  </div>
+
+  <div class="package-grid">
+
+    <!-- BASIC -->
+    <div class="package-card">
+      <div class="package-icon">✦</div>
+      <h3>Basic Package</h3>
+      <div class="price">₹60,000</div>
+
+      <ul>
+        <li>Day 1 Traditional Photography</li>
+        <li>Day 1 Traditional Videography</li>
+        <li>Day 2 Traditional Photography</li>
+        <li>Day 2 Traditional Videography</li>
+        <li>50 Sheets Premium Album</li>
+        <li>Full Length HD Video</li>
+      </ul>
+
+      <a href="#contact" class="package-btn">BOOK NOW</a>
+    </div>
+
+
+    <!-- STANDARD -->
+    <div class="package-card featured">
+      <div class="popular">MOST POPULAR</div>
+
+      <div class="package-icon">✦</div>
+      <h3>Standard Package</h3>
+      <div class="price">₹80,000</div>
+
+      <ul>
+        <li>Traditional Photography</li>
+        <li>Traditional Videography</li>
+        <li>Candid Photography</li>
+        <li>Cinematic Videography</li>
+        <li>Premium Album</li>
+        <li>Song Based Editing</li>
+      </ul>
+
+      <a href="#contact" class="package-btn">BOOK NOW</a>
+    </div>
+
+
+    <!-- PREMIUM -->
+    <div class="package-card">
+      <div class="package-icon">✦</div>
+      <h3>Premium Package</h3>
+      <div class="price">₹1,50,000</div>
+
+      <ul>
+        <li>Traditional Photography</li>
+        <li>Traditional Videography</li>
+        <li>Candid Photography</li>
+        <li>Cinematic Videography</li>
+        <li>Drone Shoot</li>
+        <li>Premium Album</li>
+        <li>Pre-Wedding Shoot</li>
+        <li>Professional Editing</li>
+      </ul>
+
+      <a href="#contact" class="package-btn">BOOK NOW</a>
+    </div>
+
+  </div>
+
+          </section>
 
 <!-- PORTFOLIO -->
 <section id="portfolio">
