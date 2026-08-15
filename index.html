@@ -679,7 +679,122 @@ footer strong{
   .process-title h2 {
     font-size: 34px;
   }
+}/* ABOUT / OUR STORY */
+
+.about-section {
+  background: #fff;
+  padding: 100px 7%;
 }
+
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-label {
+  color: #b8862f;
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+.about-content h2 {
+  font-size: 42px;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.about-content p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.about-highlight {
+  border-left: 2px solid #b8862f;
+  padding-left: 20px;
+  margin: 28px 0;
+  color: #555;
+  font-style: italic;
+}
+
+.about-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  border: 1px solid #b8862f;
+  color: #b8862f;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.about-btn:hover {
+  background: #b8862f;
+  color: #fff;
+}
+
+.about-box {
+  background: #faf9f5;
+  border: 1px solid #eee8dc;
+  padding: 55px 35px;
+  text-align: center;
+}
+
+.about-box h3 {
+  color: #b8862f;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.about-stat {
+  padding: 20px 10px;
+  border-top: 1px solid #eee8dc;
+}
+
+.about-stat strong {
+  display: block;
+  color: #b8862f;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.about-stat span {
+  font-size: 13px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-content h2 {
+    font-size: 34px;
+  }
+
+  .about-section {
+    padding: 75px 7%;
+  }
+  }
 </style>
 </head>
 
@@ -996,7 +1111,77 @@ footer strong{
 
 </section>
 
+<!-- ABOUT / OUR STORY -->
 
+<section class="about-section" id="about">
+
+  <div class="about-container">
+
+    <div class="about-content">
+
+      <div class="about-label">OUR STORY</div>
+
+      <h2>Made to Preserve Moments</h2>
+
+      <p>
+        PrimeFrames Photography is dedicated to turning real emotions,
+        beautiful celebrations and unforgettable moments into timeless
+        visual stories.
+      </p>
+
+      <p>
+        From weddings and pre-weddings to haldi, birthdays and portraits,
+        we capture every moment with creativity, emotion and attention to detail.
+      </p>
+
+      <div class="about-highlight">
+        “Your moments are once-in-a-lifetime.
+        We make sure they last forever.”
+      </div>
+
+      <a href="#contact" class="about-btn">
+        GET IN TOUCH
+      </a>
+
+    </div>
+
+    <div class="about-box">
+
+      <h3>PRIMEFRAMES</h3>
+
+      <p>
+        Photography • Cinematic Films • Timeless Memories
+      </p>
+
+      <div class="about-stats">
+
+        <div class="about-stat">
+          <strong>3+</strong>
+          <span>Years Experience</span>
+        </div>
+
+        <div class="about-stat">
+          <strong>100+</strong>
+          <span>Stories Captured</span>
+        </div>
+
+        <div class="about-stat">
+          <strong>6+</strong>
+          <span>Photography Services</span>
+        </div>
+
+        <div class="about-stat">
+          <strong>100%</strong>
+          <span>Passion & Dedication</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 <!-- CONTACT -->
 <section class="contact" id="contact">
 
