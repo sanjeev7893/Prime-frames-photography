@@ -462,7 +462,155 @@ footer strong{
   .package-card.featured {
     transform: none;
   }
+  }/* PREMIUM PACKAGE UPGRADE */
+
+#packages {
+  padding: 110px 7%;
+  background: #fbf9f4;
+}
+
+#packages .title {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+#packages .title span {
+  color: #b8862f;
+  letter-spacing: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#packages .title h2 {
+  font-family: Georgia, serif;
+  font-size: 45px;
+  margin-top: 12px;
+  color: #222;
+}
+
+.package-grid {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.package-card {
+  background: #fff;
+  border: 1px solid #e5dccb;
+  padding: 42px 30px;
+  text-align: center;
+  position: relative;
+  transition: .35s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0,0,0,.10);
+  border-color: #b8862f;
+}
+
+.package-card.featured {
+  border: 2px solid #b8862f;
+  box-shadow: 0 15px 40px rgba(184,134,47,.15);
+  transform: translateY(-12px);
+}
+
+.package-card.featured:hover {
+  transform: translateY(-20px);
+}
+
+.package-icon {
+  color: #b8862f;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.package-card h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.price {
+  color: #b8862f;
+  font-family: Georgia, serif;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.package-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.package-card li {
+  padding: 11px 0;
+  border-bottom: 1px solid #eee8dc;
+  font-size: 14px;
+}
+
+.package-card li::before {
+  content: "✓";
+  color: #b8862f;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.package-btn {
+  display: inline-block;
+  padding: 13px 30px;
+  border: 1px solid #b8862f;
+  color: #9b7024;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+  transition: .3s;
+}
+
+.package-btn:hover {
+  background: #b8862f;
+  color: #fff;
+}
+
+.popular {
+  background: #b8862f;
+  color: white;
+  padding: 8px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin: -42px -30px 28px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  #packages {
+    padding: 80px 20px;
   }
+
+  #packages .title h2 {
+    font-size: 34px;
+  }
+
+  .package-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .package-card.featured {
+    transform: none;
+  }
+
+  .package-card.featured:hover {
+    transform: translateY(-10px);
+  }
+}
 </style>
 </head>
 
