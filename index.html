@@ -922,20 +922,21 @@ footer strong{
         padding: 30px 20px;
     }
     }/* BOOKING POPUP */
-
+  
 .booking-modal {
     display: none;
     position: fixed;
     inset: 0;
     z-index: 9999;
-    background: rgba(0,0,0,0.65);
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    background: #f7f5f0;
+    overflow-y: auto;
+    padding: 100px 20px 50px;
+    box-sizing: border-box;
+}
 }
 
 .booking-modal.active {
-    display: flex;
+    display: block;
 }
 
 .booking-modal .contact-box {
