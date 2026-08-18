@@ -976,7 +976,63 @@ footer strong{
     .booking-modal .contact-box {
         padding: 30px 20px;
     }
+}/* FULL SCREEN BOOKING PAGE FIX */
+.booking-modal {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    background: #f7f5f0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-y: auto !important;
+    z-index: 99999 !important;
 }
+
+.booking-modal.active {
+    display: block !important;
+}
+
+.booking-modal .contact-box {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 80px 20px 40px !important;
+    box-sizing: border-box !important;
+    background: #f7f5f0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Mobile lo old side layout remove */
+@media (max-width: 768px) {
+    .booking-modal .contact-box {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .booking-modal .contact-box h2,
+    .booking-modal .contact-box p {
+        text-align: center !important;
+    }
+
+    .booking-modal .contact-form {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .booking-modal .contact-form input,
+    .booking-modal .contact-form select,
+    .booking-modal .contact-form textarea,
+    .booking-modal .contact-form button {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+  }
 </style>
 </head>
 
