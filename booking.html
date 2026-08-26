@@ -29,7 +29,40 @@ a{
 }
 
 /* NAVBAR */
+<section class="booking-hero">
 
+  <nav class="hero-nav">
+    <a href="index.html" class="hero-logo">
+      PRIMEFRAMES
+      <small>PHOTOGRAPHY</small>
+    </a>
+
+    <a href="index.html" class="hero-menu">
+      ← HOME
+    </a>
+  </nav>
+
+  <div class="hero-overlay"></div>
+
+  <div class="booking-hero-content">
+
+    <span>LET'S CREATE SOMETHING BEAUTIFUL</span>
+
+    <h1>
+      LET'S TALK<br>
+      <strong>WEDDINGS &</strong><br>
+      WONDER
+    </h1>
+
+    <p>YOUR STORY DESERVES TO BE REMEMBERED.</p>
+
+    <a href="#booking-form" class="hero-book-btn">
+      BOOK YOUR SHOOT
+    </a>
+
+  </div>
+
+</section>
 nav{
   width:100%;
   display:flex;
@@ -261,7 +294,168 @@ footer strong{
   .form-title h2{
     font-size:28px;
   }
+}/* CINEMATIC BOOKING HERO */
+
+.booking-hero{
+  position:relative;
+  min-height:100vh;
+  width:100%;
+  overflow:hidden;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.72)
+    ),
+    url("YOUR-PHOTO-LINK-HERE");
+
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
 }
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    90deg,
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.15),
+    rgba(0,0,0,.55)
+  );
+}
+
+.hero-nav{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding:28px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:2;
+
+  background:transparent;
+  border:none;
+}
+
+.hero-logo{
+  font-family:Georgia,serif;
+  font-size:25px;
+  letter-spacing:5px;
+  color:#f4d9b7;
+  display:flex;
+  flex-direction:column;
+}
+
+.hero-logo small{
+  font-family:Arial,sans-serif;
+  font-size:8px;
+  letter-spacing:5px;
+  margin-top:6px;
+  color:white;
+}
+
+.hero-menu{
+  border:1px solid rgba(255,255,255,.7);
+  padding:12px 18px;
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  letter-spacing:2px;
+  color:white;
+}
+
+.booking-hero-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  padding:100px 20px 40px;
+}
+
+.booking-hero-content span{
+  display:block;
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  letter-spacing:5px;
+  color:#e7c28f;
+  margin-bottom:25px;
+}
+
+.booking-hero-content h1{
+  font-size:clamp(55px,10vw,120px);
+  line-height:.9;
+  font-weight:normal;
+  letter-spacing:2px;
+  color:white;
+}
+
+.booking-hero-content h1 strong{
+  font-weight:normal;
+  color:#f1e7dc;
+}
+
+.booking-hero-content p{
+  margin-top:35px;
+  font-family:Arial,sans-serif;
+  font-size:13px;
+  letter-spacing:5px;
+  color:#eee;
+}
+
+.hero-book-btn{
+  display:inline-block;
+  margin-top:45px;
+  padding:18px 32px;
+
+  border:1px solid #d8b27a;
+
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:3px;
+
+  color:white;
+
+  transition:.3s;
+}
+
+.hero-book-btn:hover{
+  background:#b8862f;
+  border-color:#b8862f;
+  transform:translateY(-3px);
+}
+
+@media(max-width:700px){
+
+  .hero-nav{
+    padding:22px 6%;
+  }
+
+  .hero-logo{
+    font-size:18px;
+    letter-spacing:3px;
+  }
+
+  .hero-menu{
+    padding:10px 12px;
+    font-size:9px;
+  }
+
+  .booking-hero-content h1{
+    font-size:58px;
+  }
+
+  .booking-hero-content p{
+    font-size:10px;
+    letter-spacing:3px;
+    line-height:1.7;
+  }
+
+  }
 </style>
 </head>
 
