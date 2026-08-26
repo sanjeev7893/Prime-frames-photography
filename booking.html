@@ -1,1 +1,428 @@
-booking.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Your Shoot | PrimeFrames Photography</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Georgia, serif;
+  background:#fffdf9;
+  color:#222;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* NAVBAR */
+
+nav{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:22px 7%;
+  background:#ffffff;
+  border-bottom:1px solid #e8dfcf;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  letter-spacing:4px;
+  color:#b8862f;
+}
+
+.back-btn{
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  letter-spacing:2px;
+  border:1px solid #b8862f;
+  color:#b8862f;
+  padding:12px 18px;
+  transition:.3s;
+}
+
+.back-btn:hover{
+  background:#b8862f;
+  color:white;
+}
+
+/* BOOKING SECTION */
+
+.booking-page{
+  min-height:100vh;
+  padding:80px 20px;
+  background:
+  radial-gradient(circle at top,#fff5df 0%,#fffdf9 45%,#f7f3eb 100%);
+}
+
+.booking-container{
+  width:100%;
+  max-width:800px;
+  margin:auto;
+}
+
+.booking-top{
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.booking-top span{
+  display:block;
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  letter-spacing:5px;
+  color:#b8862f;
+  margin-bottom:15px;
+}
+
+.booking-top h1{
+  font-size:clamp(42px,8vw,70px);
+  color:#222;
+  margin-bottom:18px;
+}
+
+.booking-top p{
+  max-width:600px;
+  margin:auto;
+  color:#666;
+  font-family:Arial,sans-serif;
+  line-height:1.8;
+}
+
+/* FORM BOX */
+
+.booking-box{
+  background:#fff;
+  border:1px solid #dfd4c1;
+  padding:55px;
+  box-shadow:0 15px 50px rgba(80,55,20,.08);
+}
+
+.form-title{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.form-title h2{
+  font-size:32px;
+  color:#a87522;
+}
+
+.form-title p{
+  font-family:Arial,sans-serif;
+  color:#777;
+  margin-top:10px;
+  font-size:14px;
+}
+
+.form-group{
+  margin-bottom:20px;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  padding:17px 18px;
+  border:1px solid #d8cdb9;
+  background:#fffdf9;
+  color:#222;
+  font-size:14px;
+  font-family:Arial,sans-serif;
+  outline:none;
+  transition:.25s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:#b8862f;
+  box-shadow:0 0 0 3px rgba(184,134,47,.08);
+}
+
+textarea{
+  min-height:150px;
+  resize:vertical;
+}
+
+.row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.submit-btn{
+  width:100%;
+  padding:18px;
+  border:none;
+  background:#b8862f;
+  color:white;
+  font-family:Arial,sans-serif;
+  font-size:13px;
+  font-weight:bold;
+  letter-spacing:3px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.submit-btn:hover{
+  background:#8f651f;
+  transform:translateY(-2px);
+}
+
+/* TRUST TEXT */
+
+.booking-info{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+  margin-top:35px;
+  color:#777;
+  font-family:Arial,sans-serif;
+  font-size:13px;
+}
+
+.booking-info span{
+  color:#b8862f;
+  margin-right:6px;
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  padding:30px 20px;
+  color:#777;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  border-top:1px solid #e8dfcf;
+  background:white;
+}
+
+footer strong{
+  color:#b8862f;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+  nav{
+    padding:18px 6%;
+  }
+
+  .logo{
+    font-size:17px;
+    letter-spacing:2px;
+  }
+
+  .back-btn{
+    padding:10px 12px;
+    font-size:10px;
+  }
+
+  .booking-page{
+    padding:55px 15px;
+  }
+
+  .booking-box{
+    padding:30px 20px;
+  }
+
+  .row{
+    grid-template-columns:1fr;
+    gap:0;
+  }
+
+  .booking-top h1{
+    font-size:45px;
+  }
+
+  .form-title h2{
+    font-size:28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html" class="logo">PRIMEFRAMES</a>
+
+  <a href="index.html" class="back-btn">
+    ← BACK TO WEBSITE
+  </a>
+</nav>
+
+
+<section class="booking-page">
+
+  <div class="booking-container">
+
+    <div class="booking-top">
+      <span>LET'S CREATE MEMORIES</span>
+
+      <h1>Book Your Shoot</h1>
+
+      <p>
+        Tell us about your special day and we'll help you choose
+        the perfect photography package.
+      </p>
+    </div>
+
+
+    <div class="booking-box">
+
+      <div class="form-title">
+        <h2>Let's Capture Your Story</h2>
+
+        <p>
+          Fill in your details and PrimeFrames Photography
+          will get back to you soon.
+        </p>
+      </div>
+
+
+      <form action="https://formsubmit.co/primeframesphotography@gmail.com" method="POST">
+
+        <input type="hidden" name="_subject" value="New PrimeFrames Photography Booking!">
+
+        <input type="hidden" name="_captcha" value="false">
+
+
+        <div class="row">
+
+          <div class="form-group">
+            <input
+              type="text"
+              name="Name"
+              placeholder="YOUR NAME"
+              required
+            >
+          </div>
+
+
+          <div class="form-group">
+            <input
+              type="tel"
+              name="Phone"
+              placeholder="PHONE NUMBER"
+              required
+            >
+          </div>
+
+        </div>
+
+
+        <div class="row">
+
+          <div class="form-group">
+            <select name="Event Type" required>
+
+              <option value="" selected disabled>
+                SELECT EVENT TYPE
+              </option>
+
+              <option>Wedding</option>
+              <option>Pre-Wedding</option>
+              <option>Engagement</option>
+              <option>Haldi / Mehendi</option>
+              <option>Birthday</option>
+              <option>Portrait Shoot</option>
+              <option>Other Event</option>
+
+            </select>
+          </div>
+
+
+          <div class="form-group">
+            <input
+              type="date"
+              name="Event Date"
+              required
+            >
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <select name="Package" required>
+
+            <option value="" selected disabled>
+              SELECT PACKAGE
+            </option>
+
+            <option>Basic Package</option>
+            <option>Standard Package</option>
+            <option>Premium Package</option>
+            <option>Custom Package</option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <textarea
+            name="Message"
+            placeholder="TELL US ABOUT YOUR EVENT..."
+          ></textarea>
+
+        </div>
+
+
+        <button type="submit" class="submit-btn">
+          SEND BOOKING ENQUIRY
+        </button>
+
+      </form>
+
+
+      <div class="booking-info">
+
+        <div><span>✦</span> 4-5 Years Experience</div>
+
+        <div><span>✦</span> 250+ Weddings Captured</div>
+
+        <div><span>✦</span> Professional Team</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+  © 2026 <strong>PrimeFrames Photography</strong>
+  • Capturing Your Beautiful Moments
+</footer>
+
+</body>
+  </html>
