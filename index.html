@@ -1073,6 +1073,309 @@ footer strong{
     opacity:1;
     transform:translateY(0);
   }
+}/* ================================
+   PRIMEFRAMES FULL WEBSITE FIX
+================================ */
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#fff;
+  color:#222;
+  overflow-x:hidden;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* NAVBAR */
+nav{
+  width:100%;
+  padding:18px 5%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:rgba(255,255,255,.96);
+  border-bottom:1px solid #e8dfcf;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+}
+
+.logo{
+  font-family:Georgia,serif;
+  font-size:clamp(18px,4vw,28px);
+  font-weight:bold;
+  letter-spacing:3px;
+  color:#a87522;
+  white-space:nowrap;
+}
+
+nav ul{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+nav ul a{
+  font-size:13px;
+  font-weight:bold;
+}
+
+/* HERO */
+.hero{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 20px 70px;
+  position:relative;
+  background:
+    linear-gradient(rgba(20,15,10,.58),rgba(20,15,10,.72)),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=90")
+    center/cover no-repeat;
+}
+
+.hero-inner{
+  width:100%;
+  max-width:900px;
+  position:relative;
+  z-index:2;
+  animation:heroReveal 1.2s ease;
+}
+
+.badge{
+  color:#e5bd72;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:5px;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  margin:0;
+  color:#fff;
+  font-family:Georgia,serif;
+  font-size:clamp(48px,10vw,110px);
+  letter-spacing:3px;
+  line-height:1;
+  white-space:normal;
+}
+
+.hero h2{
+  margin:20px 0;
+  color:#e5bd72;
+  font-size:clamp(13px,3vw,20px);
+  letter-spacing:8px;
+}
+
+.hero p{
+  color:#fff;
+  font-family:Georgia,serif;
+  font-size:clamp(18px,4vw,25px);
+  font-style:italic;
+  margin:20px 0 35px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  padding:16px 30px;
+  border:1px solid #d9ad55;
+  color:#fff;
+  background:rgba(0,0,0,.25);
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:3px;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:#d9ad55;
+  color:#111;
+}
+
+/* ALL SECTIONS */
+section{
+  width:100%;
+  padding:80px 7%;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.title span{
+  color:#a87522;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:4px;
+}
+
+.title h2{
+  font-family:Georgia,serif;
+  font-size:clamp(32px,7vw,52px);
+  margin:10px 0 0;
+}
+
+/* SERVICES */
+.grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  min-height:260px;
+  padding:30px;
+  border:1px solid #e5ddcf;
+  background:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  border-color:#b8862f;
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.card .icon{
+  margin-bottom:auto;
+  color:#b8862f;
+  font-size:35px;
+}
+
+.card h3{
+  margin:0;
+  font-family:Georgia,serif;
+  color:#a87522;
+  font-size:25px;
+}
+
+.card p{
+  margin:10px 0 0;
+  color:#666;
+  font-size:15px;
+  line-height:1.7;
+}
+
+/* PACKAGES */
+.packages{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.package-card{
+  padding:35px 28px;
+  border:1px solid #e5ddcf;
+  background:#fff;
+}
+
+.package-card h3{
+  font-family:Georgia,serif;
+  font-size:26px;
+  color:#a87522;
+}
+
+.package-card ul{
+  padding-left:20px;
+  line-height:2;
+  color:#666;
+}
+
+/* FOOTER */
+footer{
+  padding:30px 20px;
+  text-align:center;
+  border-top:1px solid #e5ddcf;
+  color:#777;
+}
+
+/* MOBILE */
+@media(max-width:750px){
+
+  nav{
+    padding:16px 20px;
+  }
+
+  .logo{
+    font-size:20px;
+    letter-spacing:2px;
+  }
+
+  nav ul{
+    gap:12px;
+  }
+
+  nav ul a{
+    font-size:10px;
+  }
+
+  .hero{
+    min-height:100vh;
+    padding:110px 18px 60px;
+  }
+
+  .hero h1{
+    font-size:clamp(42px,12vw,58px);
+    letter-spacing:1px;
+  }
+
+  .hero h2{
+    font-size:12px;
+    letter-spacing:5px;
+  }
+
+  .badge{
+    font-size:9px;
+    letter-spacing:3px;
+  }
+
+  section{
+    padding:65px 20px;
+  }
+
+  .grid,
+  .packages{
+    grid-template-columns:1fr;
+  }
+
+  .card{
+    min-height:220px;
+  }
+}
+
+@keyframes heroReveal{
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }
 </style>
 </head>
