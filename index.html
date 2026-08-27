@@ -1000,6 +1000,79 @@ footer strong{
   #contact .title h2{
     font-size:42px;
   }
+}/* CINEMATIC OPENING HERO */
+.hero{
+  min-height:100vh;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:
+    linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.78)),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=90")
+    center/cover no-repeat;
+}
+
+.hero-inner{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  padding:30px;
+  animation:heroReveal 1.5s ease;
+}
+
+.badge{
+  color:#d9ad55;
+  font-family:Arial,sans-serif;
+  letter-spacing:7px;
+  font-size:11px;
+}
+
+.hero h1{
+  color:#fff;
+  font-size:clamp(58px,15vw,150px);
+  letter-spacing:8px;
+  line-height:.9;
+  text-shadow:0 10px 35px rgba(0,0,0,.55);
+}
+
+.hero h2{
+  color:#d9ad55;
+  font-size:clamp(14px,3vw,22px);
+  letter-spacing:12px;
+  margin:25px 0;
+}
+
+.hero p{
+  color:#fff;
+  font-size:18px;
+  letter-spacing:2px;
+}
+
+.hero .btn{
+  margin-top:20px;
+  background:#d9ad55;
+  color:#111;
+  border:none;
+  padding:17px 32px;
+}
+
+.hero .btn:hover{
+  background:#fff;
+  color:#111;
+  transform:translateY(-3px);
+}
+
+@keyframes heroReveal{
+  from{
+    opacity:0;
+    transform:translateY(35px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }
 </style>
 </head>
