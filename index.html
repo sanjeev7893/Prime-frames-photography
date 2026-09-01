@@ -65,70 +65,65 @@ nav a:hover{
 }
 
 /* HERO */
-.hero{
+  .hero{
   min-height:100vh;
-  padding:130px 7% 70px;
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
-
+  padding:120px 5% 70px;
+  position:relative;
+  overflow:hidden;
   background:
-  linear-gradient(rgba(255,255,255,.55),rgba(255,255,255,.72)),
-  url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85")
-  center/cover;
+    linear-gradient(rgba(255,255,255,.82),rgba(255,255,255,.88)),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=85")
+    center/cover no-repeat;
 }
 
-.hero-box{
-  background:rgba(255,255,255,.88);
-  padding:55px 35px;
-  max-width:850px;
-  border:1px solid #d8b46a;
+.hero-inner{
+  max-width:1000px;
+  animation:fadeUp 1.2s ease both;
 }
 
 .badge{
-  color:#b8862f;
-  letter-spacing:6px;
-  font-size:13px;
-  font-family:Arial,sans-serif;
-  font-weight:bold;
+  color:#9a702b;
+  letter-spacing:7px;
+  font:600 11px Arial,sans-serif;
+  margin-bottom:22px;
 }
 
 .hero h1{
-  color:#b8862f;
-  font-size:clamp(55px,10vw,105px);
+  font-size:clamp(48px,11vw,110px);
+  line-height:.95;
   letter-spacing:5px;
-  margin:15px 0;
+  color:#a87522;
+  margin:0;
+  white-space:normal;
 }
 
 .hero h2{
-  letter-spacing:8px;
-  font-size:18px;
-  font-family:Arial,sans-serif;
+  font:600 clamp(14px,2vw,20px) Arial,sans-serif;
+  letter-spacing:10px;
+  margin:22px 0;
+  color:#222;
 }
 
 .hero p{
-  color:#9a7125;
-  font-size:25px;
+  font-size:clamp(18px,3vw,26px);
   font-style:italic;
-  margin:20px 0 30px;
+  color:#8a672d;
+  margin:20px 0 38px;
 }
 
-.btn{
-  display:inline-block;
-  padding:15px 32px;
-  border:1px solid #b8862f;
-  color:#8f681f;
-  text-decoration:none;
-  font-family:Arial,sans-serif;
-  font-weight:bold;
-  letter-spacing:2px;
-  transition:.3s;
-}
-
-.btn:hover{
-  background:#b8862f;
-  color:white;
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(35px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }
 
 /* SECTIONS */
