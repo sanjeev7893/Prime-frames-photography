@@ -262,61 +262,88 @@ footer strong{
 @media(max-width:750px){
 
   nav{
-    padding:15px 5%;
-  }
-
-  nav ul{
-    gap:12px;
-  }
-
-  nav a{
-    font-size:11px;
+    padding:14px 18px;
+    height:68px;
+    overflow:hidden;
   }
 
   .logo{
     font-size:17px;
+    letter-spacing:2px;
+    white-space:nowrap;
+  }
+
+  nav ul{
+    display:flex;
+    gap:12px;
+    margin-left:12px;
+    white-space:nowrap;
+    font-size:9px;
+  }
+
+  nav ul li{
+    flex-shrink:0;
   }
 
   .hero{
-    padding:110px 5% 50px;
+    min-height:100vh;
+    padding:100px 20px 60px;
   }
 
-  .hero-box{
-    padding:40px 18px;
+  .hero-inner{
+    width:100%;
+    max-width:100%;
+  }
+
+  .badge{
+    font-size:9px;
+    letter-spacing:3px;
+    line-height:1.8;
+    margin-bottom:16px;
   }
 
   .hero h1{
-    font-size:48px;
-    letter-spacing:2px;
+    font-size:clamp(42px,13vw,70px);
+    letter-spacing:1px;
+    line-height:1;
+    white-space:nowrap;
   }
 
   .hero h2{
-    font-size:14px;
-    letter-spacing:5px;
+    font-size:13px;
+    letter-spacing:6px;
+    margin:18px 0;
   }
 
   .hero p{
-    font-size:20px;
+    font-size:17px;
+    line-height:1.5;
+    margin:18px auto 30px;
+    max-width:320px;
+  }
+
+  .btn{
+    padding:15px 24px;
+    font-size:11px;
+    letter-spacing:3px;
   }
 
   section{
-    padding:75px 5%;
+    padding:70px 20px;
   }
 
   .title h2{
-    font-size:36px;
+    font-size:32px;
   }
 
-  .grid{
-    grid-template-columns:1fr;
-  }
-
+  .grid,
   .gallery{
     grid-template-columns:1fr;
   }
 
   .photo{
-    height:380px;
+    height:280px;
+  }
   }
 }/* ===== PREMIUM PHOTO GALLERY ===== */
 
